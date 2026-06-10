@@ -1,0 +1,38 @@
+.items{
+    max-width: 100%;
+    height: auto;
+    margin: 53px 40px;
+    padding: 14px 0px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;    
+}
+
+.items__row{
+    display: flex;
+    gap: 132px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.items button{
+    padding: 20px 18px;
+    width: 100%;
+    max-width: 320px;
+    height: 98px;
+    background-color: #FFCC00;
+    color: #000000;
+    border: none;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}      
+
+.items button:hover {
+    background-color: #FF9900;
+    transform: scale(1.02);
+}

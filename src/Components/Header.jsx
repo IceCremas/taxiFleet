@@ -1,5 +1,19 @@
+import { useRef } from "react";
+import Footer from "./Footer";
+import Items from "./Items";
+
 
 export default function Header (){
+    const itemsRef = useRef(null)
+
+    const scrollItems = () =>{
+        if(itemsRef.current){
+            itemsRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        }
+    }
     return(
     <>
     <div className="container">
@@ -11,10 +25,12 @@ export default function Header (){
             <h2>Такси за 5 минут</h2>
             <p>Фиксированная цена Бесплатная подача. Работаем 24/7</p>
             <hr className="container__header--line"/>
-            <button className="container__header--btn">Забронировать</button>
+            <button className="container__header--btn" onClick={scrollItems}>Забронировать</button>
             </div>
             <img src="./images/logo.png" alt="#" className="container__header--img" />
         </div>
+        <Items/>
+        <Footer/>
     </div>
     </>
     )

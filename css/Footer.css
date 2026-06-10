@@ -1,0 +1,32 @@
+.footer{
+    padding: 24px 123px;
+    background-color: #212121;
+}
+
+
+
+.footer__list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #FFCC00;
+}
+
+.footer__list li{
+    flex: 1;
+}
+
+.footer__list li:hover{
+    cursor: pointer;
+}
+
+
+.footer__list li:nth-child(2){
+    text-align: center;
+}
+.footer__list li:last-child{
+    text-align: right;
+}
