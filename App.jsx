@@ -11,6 +11,7 @@ import './css/Items.css'
 import './css/Footer.css'
 import './css/AboutProject.css'
 import './css/Articles.css'
+import './css/mobile.css'
 
 function Home(){
     return(
